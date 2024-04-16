@@ -1,0 +1,36 @@
+---
+compliance.min: 48
+error.total.max: 0
+sudo_accounts: [ "ubuntu" ]
+tmout: 600
+action_mail_acct: root
+audit_tools: [
+    '/sbin/auditctl',
+    '/sbin/aureport',
+    '/sbin/ausearch',
+    '/sbin/autrace',
+    '/sbin/auditd',
+    '/sbin/audispd',
+    '/sbin/augenrules'
+  ]
+standard_audit_log_size: 8894028
+aide_conf_path: '/etc/aide/aide.conf'
+action_mail_acct: root
+maxlogins: 10
+is_kdump_required: false
+is_system_networked: true
+sssd_conf_path: '/etc/sssd/sssd.conf'
+allowed_ca_fingerprints_regex: (9676F287356C89A12683D65234098CB77C4F1C18F23C0E541DE0E196725B7EBE|B107B33F453E5510F68E513110C6F6944BACC263DF0137F821C1B3C2F8F863D2|559A5189452B13F8233F0022363C06F26E3C517C1D4B77445035959DF3244F74|1F4EDE9DC2A241F6521BF518424ACD49EBE84420E69DAF5BAC57AF1F8EE294A9)
+allowed_network_interfaces: [
+    'lo',
+    'eth0'
+  ]
+audit_sp_remote_server: '192.0.0.1'
+approved_wireless_interfaces: []
+fips_config_file: '/proc/sys/crypto/fips_enabled'
+chrony_config_file: '/etc/chrony/chrony.conf'
+useradd_config_file: '/etc/default/useradd'
+rsyslog_config_file: '/etc/rsyslog.d/50-default.conf'
+auditoffload_config_file: '/etc/cron.weekly/audit-offload'
+audispremote_config_file: '/etc/audisp/plugins.d/au-remote.conf'
+gdm3_config_file: '/etc/gdm3/greeter.dconf-defaults'
